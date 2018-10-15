@@ -17,9 +17,12 @@ from django.contrib import admin
 from django.urls import path
 from blog import views
 
-
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', views.blog_index),
-    path('', views.blog_index)
+    # path('blog/', views.blog_index),
+    # path('', views.blog_index),
+    # path('*', views.get_data),
+    # path('get_data/<slug:slug>', views.get_data),
+    path('post', views.post),
+
 ]
